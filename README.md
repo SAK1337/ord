@@ -33,8 +33,80 @@ transfer algorithm.
 See [the project board](https://github.com/orgs/ordinals/projects/1) for
 currently prioritized issues.
 
+## Table of Contents
+
+- [Usage](#usage)
+- [Donate](#donate)
+- [Wallet](#wallet)
+- [Security](#security)
+- [Installation](#installation)
+- [Building](#building)
+- [Contributing](#contributing)
+- [Syncing](#syncing)
+- [RPC Authentication](#bitcoind-rpc-authentication)
+- [Logging](#logging)
+- [New Releases](#new-releases)
+- [Commands](#commands)
+- [Translations](#translations)
+
 Join [the Discord server](https://discord.gg/87cjuz4FYg) to chat with fellow
 ordinal degenerates.
+
+Usage
+-----
+
+`ord` has a number of subcommands. For a full list, run `ord --help`.
+
+### Find a satoshi
+`ord find <SATOSHI>`
+
+### Get information about a satoshi
+`ord info <SATOSHI>`
+
+### List inscriptions
+`ord inscriptions`
+
+### Create a new wallet
+`ord wallet create`
+
+### Send a satoshi
+`ord wallet send <ADDRESS> <SATOSHI>`
+
+Commands
+--------
+
+### `ord find`
+
+Find a specific satoshi.
+
+**Usage:** `ord find [OPTIONS] <SATOSHI>`
+
+**Options:**
+- `--as-of-height <AS_OF_HEIGHT>`: The block height to search for the satoshi at.
+
+### `ord info`
+
+Get information about a satoshi.
+
+**Usage:** `ord info [OPTIONS] <SATOSHI>`
+
+### `ord inscriptions`
+
+List all inscriptions.
+
+**Usage:** `ord inscriptions [OPTIONS]`
+
+### `ord wallet`
+
+Manage your wallet.
+
+**Usage:** `ord wallet [SUBCOMMAND]`
+
+**Subcommands:**
+- `create`: Create a new wallet.
+- `send`: Send a satoshi to an address.
+- `balance`: Get the balance of your wallet.
+- `transactions`: List all transactions for your wallet.
 
 Donate
 ------
